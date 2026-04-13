@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://financialindustryreviews.com/sitemap.xml
