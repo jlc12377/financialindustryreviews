@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Financial Industry Reviews — Independent Rankings of Financial & Fintech Platforms</title>
-<meta name="description" content="Independent rankings of banking, wealth management, insurance, payments, lending, compliance, and trading education platforms. Data-driven, transparent methodology.">
+<meta name="description" content="Independent rankings of banking, wealth management, insurance, payments, lending, compliance, trading education, and forex signal services. Data-driven, transparent methodology.">
 <link rel="canonical" href="https://financialindustryreviews.com/">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -24,18 +24,37 @@
 .trust-bar{background:var(--surface-2);border-bottom:1px solid var(--border-light);padding:16px 28px}.trust-bar-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:40px;font-size:12px;color:var(--ink-4);font-weight:500}
 .section{max-width:var(--max-w);margin:0 auto;padding:72px 28px}.section-eyebrow{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--emerald);margin-bottom:8px}.section-title{font-family:var(--font-display);font-size:34px;font-weight:400;letter-spacing:-.8px;color:var(--ink);line-height:1.2}.section-sub{font-size:15px;color:var(--ink-3);margin-top:8px;max-width:500px}.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px}
 .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 20px;text-decoration:none;color:var(--ink);transition:all .25s;position:relative;overflow:hidden}.cat-card:hover{border-color:var(--emerald);box-shadow:var(--shadow-md);transform:translateY(-2px)}.cat-card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:20px}.cat-card-icon.green{background:var(--emerald-wash)}.cat-card-icon.gold{background:var(--gold-wash)}.cat-card-icon.red{background:var(--red-pale)}.cat-card-icon.slate{background:var(--surface-3)}.cat-card-name{font-size:15px;font-weight:600;margin-bottom:4px}.cat-card-count{font-size:12.5px;color:var(--ink-4)}.cat-card-desc{font-size:13px;color:var(--ink-3);margin-top:6px;line-height:1.5}.cat-card-arrow{position:absolute;top:20px;right:18px;font-size:14px;color:var(--ink-4);transition:all .2s;opacity:0;transform:translateX(-4px)}.cat-card:hover .cat-card-arrow{opacity:1;transform:translateX(0)}
+.cat-card-badge{display:inline-block;background:var(--emerald);color:#fff;font-size:9px;font-weight:700;padding:2px 8px;border-radius:3px;letter-spacing:.06em;margin-left:4px;vertical-align:middle}
+.forex-section{background:linear-gradient(180deg,var(--surface),var(--surface-2));border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light)}
+.forex-hero-card{background:linear-gradient(135deg,#0a0a0a 0%,#1a2d4a 100%);border-radius:var(--radius-xl);padding:32px;margin-bottom:28px;color:#fff;position:relative;overflow:hidden}
+.forex-hero-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(29,78,216,.2) 0%,transparent 55%);pointer-events:none}
+.forex-hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.forex-hero-badge{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:700;padding:4px 12px;border-radius:4px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.forex-hero-title{font-family:var(--font-display);font-size:28px;font-weight:400;letter-spacing:-.6px;margin-bottom:8px}
+.forex-hero-title em{font-style:italic;color:var(--gold-soft)}
+.forex-hero-desc{font-size:14px;color:rgba(255,255,255,.6);max-width:560px;line-height:1.6}
+.forex-hero-stat{text-align:center}
+.forex-hero-stat-num{font-family:var(--font-display);font-size:44px;color:#fff;line-height:1;margin-bottom:4px}
+.forex-hero-stat-label{font-size:11px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em}
+.forex-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.forex-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px 16px;text-decoration:none;color:var(--ink);transition:all .25s;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.forex-card:hover{border-color:var(--emerald);box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.forex-card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:16px;background:var(--emerald-wash)}
+.forex-card-name{font-size:13.5px;font-weight:600;margin-bottom:4px;line-height:1.3}
+.forex-card-count{font-size:11.5px;color:var(--ink-4);margin-bottom:8px}
+.forex-card-keyword{font-size:11px;color:var(--emerald);font-weight:500;margin-top:auto;padding-top:8px;border-top:1px solid var(--border-light)}
 .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:36px}.method-card{text-align:center;padding:24px 12px}.method-num{width:40px;height:40px;border-radius:50%;background:var(--black);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;font-style:italic;margin:0 auto 14px}.method-label{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px}.method-desc{font-size:13px;color:var(--ink-3);line-height:1.55}
 .cta{background:var(--black);text-align:center;padding:80px 28px;position:relative;overflow:hidden}.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(29,78,216,.08) 0%,transparent 50%),radial-gradient(ellipse at 70% 60%,rgba(5,150,105,.05) 0%,transparent 40%);pointer-events:none}.cta h2{font-family:var(--font-display);font-size:36px;font-weight:400;color:#fff;letter-spacing:-.8px;margin-bottom:12px;position:relative}.cta p{font-size:16px;color:rgba(255,255,255,.4);margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto;position:relative}.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--emerald);color:#fff;font-size:14px;font-weight:600;border-radius:8px;text-decoration:none;transition:background .2s;position:relative}.cta-btn:hover{background:var(--emerald-soft)}
 .footer{background:var(--black);padding:64px 28px 40px;border-top:1px solid rgba(255,255,255,.04)}.footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}.footer-brand-mark{display:flex;align-items:center;gap:10px;margin-bottom:14px}.footer-logo{width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--emerald),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:14px;color:#fff;font-style:italic}.footer-brand-name{font-size:14px;font-weight:600;color:#fff}.footer-brand-name span{color:var(--emerald-soft)}.footer-desc{font-size:13px;color:rgba(255,255,255,.3);line-height:1.6;max-width:280px}.footer-col-title{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);margin-bottom:16px}.footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.35);text-decoration:none;margin-bottom:10px;transition:color .2s}.footer-col a:hover{color:var(--emerald-soft)}.footer-bottom{max-width:var(--max-w);margin:40px auto 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.2)}.footer-bottom a{color:rgba(255,255,255,.25);text-decoration:none;margin-left:20px}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px}.hero h1{font-size:34px}.cat-grid{grid-template-columns:1fr}.method-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}.nav-links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--black);flex-direction:column;padding:20px 28px;border-bottom:1px solid rgba(255,255,255,.06);gap:16px}.nav-links.open{display:flex}.mobile-menu-btn{display:flex}.trust-bar-inner{flex-wrap:wrap;gap:16px;justify-content:center}.hero-metrics{gap:20px;flex-wrap:wrap}.section-header{flex-direction:column;align-items:flex-start;gap:12px}}
-@media(max-width:480px){.hero h1{font-size:28px}.section-title{font-size:26px}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px}.hero h1{font-size:34px}.cat-grid{grid-template-columns:1fr}.method-grid{grid-template-columns:repeat(2,1fr)}.forex-grid{grid-template-columns:repeat(2,1fr)}.forex-hero-inner{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}.nav-links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--black);flex-direction:column;padding:20px 28px;border-bottom:1px solid rgba(255,255,255,.06);gap:16px}.nav-links.open{display:flex}.mobile-menu-btn{display:flex}.trust-bar-inner{flex-wrap:wrap;gap:16px;justify-content:center}.hero-metrics{gap:20px;flex-wrap:wrap}.section-header{flex-direction:column;align-items:flex-start;gap:12px}}
+@media(max-width:480px){.hero h1{font-size:28px}.section-title{font-size:26px}.forex-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {"@type": "WebSite","name": "Financial Industry Reviews","url": "https://financialindustryreviews.com","description": "Independent rankings of banking, wealth management, insurance, payments, lending, compliance, and trading education platforms. Transparent methodology for the financial services industry.","publisher": {"@type": "Organization","name": "Listicle Liaison LLC","url": "https://listicleliaison.com","contactPoint": {"@type": "ContactPoint","email": "partnerships@listicleliaison.com","contactType": "sales"},"sameAs": ["https://softwareindustryreviews.com","https://aiindustryreviews.com","https://healthcareindustryreviews.com","https://cryptoindustryreviews.com","https://casinoindustryreviews.com","https://miningindustryreviews.com","https://smbnewsroom.com","https://ai-mentions.com","https://listicleliaison.com"]}},
-    {"@type": "ItemList","name": "Financial Services Rankings Categories","description": "Independent rankings across 7 financial services categories","numberOfItems": 7,"itemListElement": [{"@type": "ListItem","position": 1,"name": "Best Banking & Core Systems 2026","url": "https://financialindustryreviews.com/pages/banking-rankings.html"},{"@type": "ListItem","position": 2,"name": "Best Wealth Management Platforms 2026","url": "https://financialindustryreviews.com/pages/wealth-rankings.html"},{"@type": "ListItem","position": 3,"name": "Best Insurance Technology 2026","url": "https://financialindustryreviews.com/pages/insurtech-rankings.html"},{"@type": "ListItem","position": 4,"name": "Best Payment Platforms 2026","url": "https://financialindustryreviews.com/pages/payments-rankings.html"},{"@type": "ListItem","position": 5,"name": "Best Lending & Mortgage Tech 2026","url": "https://financialindustryreviews.com/pages/lending-rankings.html"},{"@type": "ListItem","position": 6,"name": "Best Compliance & RegTech 2026","url": "https://financialindustryreviews.com/pages/compliance-rankings.html"},{"@type": "ListItem","position": 7,"name": "Best Trading Education & Market Intelligence 2026","url": "https://financialindustryreviews.com/pages/trading-education.html"}]}
+    {"@type": "WebSite","name": "Financial Industry Reviews","url": "https://financialindustryreviews.com","description": "Independent rankings of banking, wealth management, insurance, payments, lending, compliance, trading education, and forex signal services. Transparent methodology for the financial services industry.","publisher": {"@type": "Organization","name": "Listicle Liaison LLC","url": "https://listicleliaison.com","contactPoint": {"@type": "ContactPoint","email": "partnerships@listicleliaison.com","contactType": "sales"},"sameAs": ["https://softwareindustryreviews.com","https://aiindustryreviews.com","https://healthcareindustryreviews.com","https://cryptoindustryreviews.com","https://casinoindustryreviews.com","https://miningindustryreviews.com","https://smbnewsroom.com","https://ai-mentions.com","https://listicleliaison.com"]}},
+    {"@type": "ItemList","name": "Financial Services Rankings Categories","description": "Independent rankings across 12 financial services categories","numberOfItems": 12,"itemListElement": [{"@type": "ListItem","position": 1,"name": "Best Banking & Core Systems 2026","url": "https://financialindustryreviews.com/pages/banking-rankings.html"},{"@type": "ListItem","position": 2,"name": "Best Wealth Management Platforms 2026","url": "https://financialindustryreviews.com/pages/wealth-rankings.html"},{"@type": "ListItem","position": 3,"name": "Best Insurance Technology 2026","url": "https://financialindustryreviews.com/pages/insurtech-rankings.html"},{"@type": "ListItem","position": 4,"name": "Best Payment Platforms 2026","url": "https://financialindustryreviews.com/pages/payments-rankings.html"},{"@type": "ListItem","position": 5,"name": "Best Lending & Mortgage Tech 2026","url": "https://financialindustryreviews.com/pages/lending-rankings.html"},{"@type": "ListItem","position": 6,"name": "Best Compliance & RegTech 2026","url": "https://financialindustryreviews.com/pages/compliance-rankings.html"},{"@type": "ListItem","position": 7,"name": "Best Trading Education & Market Intelligence 2026","url": "https://financialindustryreviews.com/pages/trading-education.html"},{"@type": "ListItem","position": 8,"name": "Best Forex Signals Telegram Channels 2026","url": "https://financialindustryreviews.com/pages/best-forex-signals-telegram.html"},{"@type": "ListItem","position": 9,"name": "Best Gold Trading Signal Services 2026","url": "https://financialindustryreviews.com/pages/best-gold-trading-signals.html"},{"@type": "ListItem","position": 10,"name": "Best Free Forex Signals Telegram","url": "https://financialindustryreviews.com/pages/best-free-forex-signals.html"},{"@type": "ListItem","position": 11,"name": "Best VIP Forex Signal Services 2026","url": "https://financialindustryreviews.com/pages/best-vip-forex-signals.html"},{"@type": "ListItem","position": 12,"name": "Best Forex Copy Trading Platforms 2026","url": "https://financialindustryreviews.com/pages/best-forex-copy-trading.html"}]}
   ]
 }
 </script>
@@ -48,7 +67,7 @@
       <div class="nav-logo-mark">Fi</div>
       <div class="nav-logo-text">Financial Industry <span>Reviews</span></div>
     </a>
-    <div class="nav-links"><a href="/">Home</a><a href="/#categories">Rankings</a><a href="/pages/methodology.html">Methodology</a><a href="/pages/pricing.html" class="nav-cta">Get Listed</a></div>
+    <div class="nav-links"><a href="/">Home</a><a href="/#categories">Rankings</a><a href="/#forex-signals">Forex Signals</a><a href="/pages/methodology.html">Methodology</a><a href="/pages/pricing.html" class="nav-cta">Get Listed</a></div>
     <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -58,30 +77,30 @@
     <div>
       <div class="hero-tag"><span class="hero-tag-dot"></span> Independent Financial Rankings</div>
       <h1>The financial platforms <em>worth knowing</em></h1>
-      <p class="hero-sub">Independent rankings of banking technology, wealth management, insurance, payments, lending, compliance, and trading education platforms. Transparent methodology. No pay-to-play rankings. Built for financial institutions, fintechs, and industry buyers.</p>
+      <p class="hero-sub">Independent rankings of banking technology, wealth management, insurance, payments, lending, compliance, trading education, and forex signal services. Transparent methodology. No pay-to-play rankings. Built for financial institutions, fintechs, traders, and industry buyers.</p>
       <div class="hero-metrics">
-        <div><div class="hero-metric-num">72+</div><div class="hero-metric-label">Platforms Ranked</div></div>
-        <div><div class="hero-metric-num">7</div><div class="hero-metric-label">Categories</div></div>
-        <div><div class="hero-metric-num">32k+</div><div class="hero-metric-label">Reviews Analyzed</div></div>
+        <div><div class="hero-metric-num">122+</div><div class="hero-metric-label">Platforms Ranked</div></div>
+        <div><div class="hero-metric-num">12</div><div class="hero-metric-label">Categories</div></div>
+        <div><div class="hero-metric-num">50k+</div><div class="hero-metric-label">Reviews Analyzed</div></div>
       </div>
     </div>
     <div class="hero-sidebar">
       <div class="hero-sidebar-title">Trending rankings</div>
-      <a href="/pages/banking-rankings.html" class="hero-sidebar-item">
+      <a href="/pages/best-forex-signals-telegram.html" class="hero-sidebar-item">
         <div class="hero-sidebar-rank">1</div>
-        <div><div class="hero-sidebar-text">Best Banking & Core Systems — 2026</div><div class="hero-sidebar-meta">FIS vs Temenos vs Thought Machine vs Mambu</div></div>
+        <div><div class="hero-sidebar-text">Best Forex Signals Telegram — 2026</div><div class="hero-sidebar-meta">Learn2Trade vs AltSignals vs FX Leaders</div></div>
       </a>
-      <a href="/pages/trading-education.html" class="hero-sidebar-item">
+      <a href="/pages/best-gold-trading-signals.html" class="hero-sidebar-item">
         <div class="hero-sidebar-rank">2</div>
-        <div><div class="hero-sidebar-text">Trading Education & Market Intelligence — 2026</div><div class="hero-sidebar-meta">Investopedia vs Babypips vs TradingView vs Benzinga</div></div>
+        <div><div class="hero-sidebar-text">Best Gold Trading Signals — 2026</div><div class="hero-sidebar-meta">XAU/USD specialists ranked independently</div></div>
       </a>
-      <a href="/pages/wealth-rankings.html" class="hero-sidebar-item">
+      <a href="/pages/best-forex-copy-trading.html" class="hero-sidebar-item">
         <div class="hero-sidebar-rank">3</div>
-        <div><div class="hero-sidebar-text">Best Wealth Management Platforms — 2026</div><div class="hero-sidebar-meta">Addepar vs Orion vs Black Diamond vs Wealthfront</div></div>
+        <div><div class="hero-sidebar-text">Best Forex Copy Trading Platforms — 2026</div><div class="hero-sidebar-meta">eToro vs ZuluTrade vs MyFxBook</div></div>
       </a>
-      <a href="/pages/payments-rankings.html" class="hero-sidebar-item">
+      <a href="/pages/banking-rankings.html" class="hero-sidebar-item">
         <div class="hero-sidebar-rank">4</div>
-        <div><div class="hero-sidebar-text">Best Payment Platforms — 2026</div><div class="hero-sidebar-meta">Stripe vs Adyen vs Square vs Marqeta</div></div>
+        <div><div class="hero-sidebar-text">Best Banking & Core Systems — 2026</div><div class="hero-sidebar-meta">FIS vs Temenos vs Thought Machine</div></div>
       </a>
     </div>
   </div>
@@ -102,7 +121,7 @@
     <div>
       <div class="section-eyebrow" id="categories">Categories</div>
       <div class="section-title">Rankings across every corner of financial services</div>
-      <div class="section-sub">From banking to payments to compliance to trading education — every financial services category ranked independently.</div>
+      <div class="section-sub">From banking to payments to compliance — every financial services category ranked independently.</div>
     </div>
   </div>
   <div class="cat-grid">
@@ -158,6 +177,65 @@
   </div>
 </section>
 
+<section class="forex-section">
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow" id="forex-signals">Forex Signals &amp; Trading</div>
+        <div class="section-title">Complete forex signals ranking hub</div>
+        <div class="section-sub">Five dedicated rankings covering every type of forex signal service — from free Telegram channels to premium VIP tiers and automated copy trading platforms.</div>
+      </div>
+    </div>
+
+    <div class="forex-hero-card">
+      <div class="forex-hero-inner">
+        <div>
+          <div class="forex-hero-badge">New for 2026</div>
+          <h3 class="forex-hero-title">Independent forex signal rankings <em>you can trust</em></h3>
+          <p class="forex-hero-desc">We evaluated 50+ forex signal providers across five specialized categories — telegram channels, gold trading, free tiers, VIP services, and copy trading platforms. Each listicle includes verified performance data, transparent risk disclosures, and detailed pricing comparisons.</p>
+        </div>
+        <div class="forex-hero-stat">
+          <div class="forex-hero-stat-num">50+</div>
+          <div class="forex-hero-stat-label">Providers Ranked</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="forex-grid">
+      <a href="/pages/best-forex-signals-telegram.html" class="forex-card">
+        <div class="forex-card-icon">&#128226;</div>
+        <div class="forex-card-name">Best Forex Signals Telegram</div>
+        <div class="forex-card-count">10 channels ranked</div>
+        <div class="forex-card-keyword">Target: forex signals telegram</div>
+      </a>
+      <a href="/pages/best-gold-trading-signals.html" class="forex-card">
+        <div class="forex-card-icon">&#129689;</div>
+        <div class="forex-card-name">Best Gold Trading Signals</div>
+        <div class="forex-card-count">10 services ranked</div>
+        <div class="forex-card-keyword">Target: gold XAU/USD signals</div>
+      </a>
+      <a href="/pages/best-free-forex-signals.html" class="forex-card">
+        <div class="forex-card-icon">&#127873;</div>
+        <div class="forex-card-name">Best Free Forex Signals</div>
+        <div class="forex-card-count">10 free sources</div>
+        <div class="forex-card-keyword">Target: free forex signals</div>
+      </a>
+      <a href="/pages/best-vip-forex-signals.html" class="forex-card">
+        <div class="forex-card-icon">&#128142;</div>
+        <div class="forex-card-name">Best VIP Forex Signals</div>
+        <div class="forex-card-count">10 premium services</div>
+        <div class="forex-card-keyword">Target: VIP forex signals</div>
+      </a>
+      <a href="/pages/best-forex-copy-trading.html" class="forex-card">
+        <div class="forex-card-icon">&#128257;</div>
+        <div class="forex-card-name">Best Forex Copy Trading</div>
+        <div class="forex-card-count">10 platforms ranked</div>
+        <div class="forex-card-keyword">Target: forex copy trading</div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <div style="background:var(--surface-2);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light)">
   <div class="section">
     <div class="section-header">
@@ -192,7 +270,7 @@
       <p class="footer-desc">Independent, data-driven rankings of financial and fintech platforms. Part of the Listicle Liaison publishing network.</p>
     </div>
     <div class="footer-col">
-      <div class="footer-col-title">Rankings</div>
+      <div class="footer-col-title">Financial Rankings</div>
       <a href="/pages/banking-rankings.html">Banking & Core Systems</a>
       <a href="/pages/wealth-rankings.html">Wealth Management</a>
       <a href="/pages/insurtech-rankings.html">Insurance Technology</a>
@@ -202,20 +280,21 @@
       <a href="/pages/trading-education.html">Trading Education</a>
     </div>
     <div class="footer-col">
+      <div class="footer-col-title">Forex Rankings</div>
+      <a href="/pages/best-forex-signals-telegram.html">Forex Signals Telegram</a>
+      <a href="/pages/best-gold-trading-signals.html">Gold Trading Signals</a>
+      <a href="/pages/best-free-forex-signals.html">Free Forex Signals</a>
+      <a href="/pages/best-vip-forex-signals.html">VIP Forex Signals</a>
+      <a href="/pages/best-forex-copy-trading.html">Forex Copy Trading</a>
+    </div>
+    <div class="footer-col">
       <div class="footer-col-title">Our Network</div>
       <a href="https://softwareindustryreviews.com">Software Industry Reviews</a>
       <a href="https://aiindustryreviews.com">AI Industry Reviews</a>
-      <a href="https://healthcareindustryreviews.com">Healthcare Industry Reviews</a>
-      <a href="https://cryptoindustryreviews.com">Crypto Industry Reviews</a>
-      <a href="https://casinoindustryreviews.com">Casino Industry Reviews</a>
-      <a href="https://miningindustryreviews.com">Mining Industry Reviews</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Tools &amp; Media</div>
+      <a href="https://healthcareindustryreviews.com">Healthcare Reviews</a>
+      <a href="https://cryptoindustryreviews.com">Crypto Reviews</a>
       <a href="https://ai-mentions.com">AI Mentions</a>
       <a href="https://smbnewsroom.com">SMB Newsroom</a>
-      <a href="https://listicleliaison.com">Listicle Liaison</a>
-      <a href="/pages/methodology.html">Methodology</a>
       <a href="/pages/pricing.html">Get Listed</a>
     </div>
   </div>
