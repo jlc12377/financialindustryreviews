@@ -58,11 +58,11 @@
 .co-list{display:flex;flex-direction:column;gap:14px}
 .co-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 26px;transition:box-shadow .2s;position:relative;overflow:hidden}
 .co-card:hover{box-shadow:var(--shadow-md)}
-.co-card.featured{border:1.5px solid var(--gold-light);background:linear-gradient(135deg,#fefaf0,#fff)}
-.co-card.featured::before{content:'FEATURED EDUCATION RESOURCE';position:absolute;top:0;right:0;background:linear-gradient(135deg,var(--emerald),var(--gold));color:#fff;font-size:9px;font-weight:700;letter-spacing:.08em;padding:5px 16px 5px 20px;border-radius:0 0 0 8px}
+
+
 .co-card-inner{display:grid;grid-template-columns:50px 1fr 170px;gap:20px;align-items:start}
 .co-rank{font-family:var(--font-display);font-size:22px;font-style:italic;color:var(--ink-3);padding-top:2px}
-.co-card.featured .co-rank{color:var(--emerald)}
+
 .co-name{font-family:var(--font-display);font-size:20px;font-weight:600;letter-spacing:-.2px;margin-bottom:4px}
 .co-name a{color:var(--ink);text-decoration:none}
 .co-name a:hover{color:var(--emerald)}
@@ -187,6 +187,15 @@
 
   gtag('config', 'G-P8P36G6MZV');
 </script>
+<style>
+.get-verified-note{margin:14px 0 0;font-size:14px;line-height:1.5}
+.get-verified-note a{font-weight:600}
+.listicle-header .get-verified-note a{color:#bfdbfe}
+.get-verified-cta{display:inline-block;margin-top:8px;padding:14px 22px;background:#059669;color:#fff;border-radius:4px;font-size:14px;font-weight:600;text-decoration:none}
+.footer-desc{max-width:460px}
+.footer-disclosure{max-width:var(--max-w,1200px);margin:28px auto 0;font-size:13px;line-height:1.6;color:rgba(255,255,255,.55)}
+.sponsored-box[hidden]{display:none!important}
+</style>
 </head>
 <body>
 
@@ -197,7 +206,7 @@
     <p>
       Financial Industry Reviews evaluates trading education platforms, market intelligence services, research tools, and financial analysis providers.
     </p>
-    <a href="/pages/pricing.html" class="company-cta-button">Request Listing Review</a>
+    <a href="https://listicleliaison.com/pages/pricing.html" class="company-cta-button">Own a business? Get verified →</a>
   </div>
 </section>
 
@@ -211,7 +220,7 @@
     <div class="nav-links">
       <a href="/">Categories</a>
       <a href="/pages/methodology.html">Methodology</a>
-      <a href="/pages/pricing.html">Get Listed</a>
+      <a href="https://listicleliaison.com/pages/pricing.html">Own a business? Get verified →</a>
     </div>
     <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -245,6 +254,8 @@
     <p>Services are evaluated on educational content quality, years of operation, transparency about methodology, user reviews across multiple platforms, regulatory standing where applicable, and clarity of their risk disclosures. This is a directory, not a performance ranking &mdash; we do not evaluate trading results, and readers should not interpret listing order as a measure of profitability.</p>
   </div>
 
+  <p class="get-verified-note"><a href="https://listicleliaison.com/pages/pricing.html">Own a business? Get verified →</a></p>
+
   <div class="co-list">
 
     <div class="co-card">
@@ -262,7 +273,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <div class="co-reviews">24,500+ reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://academy.investopedia.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -283,7 +293,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <div class="co-reviews">18,400+ reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.babypips.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -304,7 +313,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <div class="co-reviews">42,800+ reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.tradingview.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -325,7 +333,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
             <div class="co-reviews">6,240 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.benzinga.com/pro" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -346,7 +353,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">4,120 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.dailyfx.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -367,7 +373,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">3,890 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.warriortrading.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -388,7 +393,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">2,180 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.trade-ideas.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -409,7 +413,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">4,560 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.tradingacademy.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -430,7 +433,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">1,840 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.smbtraining.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -451,7 +453,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">2,340 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://www.oanda.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -472,7 +473,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
             <div class="co-reviews">960 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://realtrading.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -493,7 +493,6 @@
             <div class="co-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
             <div class="co-reviews">780 reviews</div>
           </div>
-          <a href="/pages/pricing.html" class="co-btn primary">Claim Profile</a>
           <a href="https://tradingstrategyguides.com" class="co-btn outline" target="_blank" rel="noopener">View Details</a>
         </div>
       </div>
@@ -525,14 +524,15 @@
   <div class="footer-inner">
     <div>
       <div class="footer-brand-mark"><div class="footer-logo">Fr</div><div class="footer-brand-name">Financial Industry <span>Reviews</span></div></div>
-      <p class="footer-desc">Independent rankings and directories of financial services and educational resources. Part of the Listicle Liaison publishing network.</p>
+      <p class="footer-desc">Independent rankings and directories of financial services and educational resources. Financial Industry Reviews is part of Listicle Liaison's network of review sites. Rankings are not for sale. Sponsored placements are labeled and sit outside the ranked list.</p>
     </div>
     <div class="footer-col"><div class="footer-col-title">Categories</div><a href="/pages/wealth-rankings.html">Wealth Management</a><span>Insurance Providers</span><span>Tax & Accounting</span><a href="/pages/trading-education.html">Trading Education</a><span>Financial Planning</span></div>
     <div class="footer-col"><div class="footer-col-title">Our Network</div><a href="https://softwareindustryreviews.com">Software Reviews</a><a href="https://aiindustryreviews.com">AI Reviews</a><a href="https://healthcareindustryreviews.com">Healthcare Reviews</a><a href="https://localsmallbusinessreviews.com">Local Reviews</a></div>
-    <div class="footer-col"><div class="footer-col-title">Tools & Media</div><a href="https://ai-mentions.com">AI Mentions</a><a href="https://smbnewsroom.com">SMB Newsroom</a><a href="https://listicleliaison.com">Listicle Liaison</a><a href="/pages/pricing.html">Get Listed</a></div>
+    <div class="footer-col"><div class="footer-col-title">Tools & Media</div><a href="https://ai-mentions.com">AI Mentions</a><a href="https://smbnewsroom.com">SMB Newsroom</a><a href="https://listicleliaison.com">Listicle Liaison</a><a href="https://listicleliaison.com/pages/pricing.html">Own a business? Get verified →</a></div>
   </div>
-  <div class="footer-bottom"><span>&copy; 2026 Financial Industry Reviews. Part of the Listicle Liaison network.</span><span><a href="https://listicleliaison.com/pages/privacy.html">Privacy</a><a href="https://listicleliaison.com/pages/terms.html">Terms</a><a href="https://listicleliaison.com/pages/disclosure.html">Disclosures</a></span></div>
+  <div class="footer-bottom"><span>&copy; 2026 Financial Industry Reviews.</span><span><a href="https://listicleliaison.com/pages/privacy.html">Privacy</a><a href="https://listicleliaison.com/pages/terms.html">Terms</a><a href="https://listicleliaison.com/pages/disclosure.html">Disclosures</a></span></div>
 </footer>
 
+<script src="/assets/ll-events.js"></script>
 </body>
 </html>
